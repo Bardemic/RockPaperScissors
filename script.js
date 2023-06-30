@@ -1,6 +1,12 @@
 const rpsList = ["rock", "paper", "scissors"];
+const selectors = document.querySelectorAll(".selection");
 
 let getComputerChoice = () => rpsList[Math.floor(Math.random() * 3)];
+
+selectors.forEach(selector => selector.addEventListener('click', (e) => {
+    console.log(playRound(e.target.id, getComputerChoice()));
+}));
+
 
 function playRound(playerSelection, computerSelection){
     playerSelection = playerSelection.toLowerCase();
@@ -13,12 +19,4 @@ function playRound(playerSelection, computerSelection){
         return("You lose! " + computerSelection + " beats " + playerSelection + "!");
     }
     return("You win! " + playerSelection + " beats " + computerSelection + "!");
-}
-
-function game(list) {
-    for(let i = 1; i <= 5; i++){
-        let playerChoice = prompt("Choose one of the three: Rock, Paper, or Scissors")
-        console.log(playRound(playerChoice, getComputerChoice()));
-
-    }
 }
