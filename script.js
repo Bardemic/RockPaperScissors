@@ -1,10 +1,11 @@
 const rpsList = ["rock", "paper", "scissors"];
 const selectors = document.querySelectorAll(".selection");
+const results = document.querySelector("#results");
 
 let getComputerChoice = () => rpsList[Math.floor(Math.random() * 3)];
 
 selectors.forEach(selector => selector.addEventListener('click', (e) => {
-    console.log(playRound(e.target.id, getComputerChoice()));
+    results.textContent = (playRound(e.target.id, getComputerChoice()));
 }));
 
 
