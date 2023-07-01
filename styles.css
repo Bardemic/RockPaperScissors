@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(130, 132, 190);
+    display: flex;
+    flex-direction: column;
+}
+
+.selection {
+    width: 200px;
+}
+
+#gameButtons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
