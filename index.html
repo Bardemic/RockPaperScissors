@@ -8,14 +8,16 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <h1>Rock Paper Scissors</h1>
+    <h2>First to Five Wins!</h2>
     <div id="scores">
-        <div id="player">Score: 0</div>
-        <div id="computer">Score: 0</div>
+        <div class="scoreBox" id="player">0</div>
+        <div class="scoreBox" id="computer">0</div>
     </div>
     <div id="gameButtons">
-        <button class="selection" id="rock">Rock</button>
-        <button class="selection" id="paper">Paper</button>
-        <button class="selection" id="scissors">Scissors</button>
+            <button class="selection" id="rock"><img src="images/rock.png" class="buttonPhoto">Rock</button>
+            <button class="selection" id="paper"><img src="images/paper.png" class="buttonPhoto">Paper</button>
+            <button class="selection" id="scissors"><img src="images/scissors.png" class="buttonPhoto">Scissors</button>
     </div>
 
     <div id="results"></div>
@@ -25,5 +27,6 @@
         <button id="playAgain">Play Again</button>
     </div>
     
+    <button id="acknowledgments">Acknowledgments</button>
 </body>
 </html>

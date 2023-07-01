@@ -17,7 +17,7 @@ selectors.forEach(selector => selector.addEventListener('click', (e) => {
 
 function addPoints(winnerDiv, winnerScore){
     winnerScore++;
-    winnerDiv.textContent = `Score: ${winnerScore}`;
+    winnerDiv.textContent = winnerScore;
     if(winnerScore === 5) gameWon(winnerDiv.id);
     return winnerScore;
 }
@@ -32,8 +32,8 @@ playAgain.addEventListener('click', () => resetGame());
 function resetGame() {
     computerScore = 0;
     playerScore = 0;
-    computerScoreDiv.textContent = "Score: 0";
-    playerScoreDiv.textContent = "Score: 0";
+    computerScoreDiv.textContent = "0";
+    playerScoreDiv.textContent = "0";
     winnerScreen.style.display = "none";
     results.textContent = "";
 }

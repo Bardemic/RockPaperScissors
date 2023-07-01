@@ -1,11 +1,16 @@
 body {
-    background-color: rgb(130, 132, 190);
+    margin: 0;
+    background-color: #392759;
     display: flex;
     flex-direction: column;
 }
 
 .selection {
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #gameButtons {
@@ -13,6 +18,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 #results {
@@ -22,12 +28,67 @@ body {
 }
 
 #scores {
+    align-self: center;
+    width: 400px;
+    background-color: #6874E8;
+    color: #E8F0FF;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 50px;
+}
+
+.scoreBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #555fbf;
+    margin: 10px;
+    font-size: 100px;
 }
 
 #winnerScreen {
     display: none;
     justify-content: center;
+}
+
+#acknowledgments {
+    position: absolute;
+    bottom: 0;
+    align-self: flex-end;
+    margin: 5px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+h1, h2 {
+    font-family: 'monaco', 'sans serif';
+    color: #E8F0FF;
+    text-align: center;
+}
+
+button {
+    background-color: #6874E8;
+    color: #E8F0FF;
+    border: none;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: #555fbf;
+}
+
+.buttonPhoto {
+    width: auto;
+    height: 200px;
 }
